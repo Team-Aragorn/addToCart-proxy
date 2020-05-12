@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/app.css">
+    <title>Aragorn: Michael's Proxy</title>
+  </head>
+  <body>
+    <div id="CarouselImages"></div>
+    <div id="AddToCart"></div>
+    <div id="Recommended"></div>
+    <div id="Details"></div>
+    <div id="Reviews"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="http://localhost:3001/app.js"></script>
+    <script src="http://localhost:3002/app.js"></script>
+    <script src="http://localhost:3003/app.js"></script>
+    <script src="http://localhost:3004/app.js"></script>
+    <script src="http://localhost:3005/app.js"></script>
+    <script>
+      // ReactDOM.render(
+      //   React.createElement(CarouselImages),
+      //   document.getElementById('!!!NEED DIV NAME!!!!')
+      // );
+      ReactDOM.render(
+        React.createElement(AddToCart),
+        document.getElementById('addToCart')
+      );
+      // ReactDOM.render(
+      //   React.createElement(Recommended),
+      //   document.getElementById('!!!NEED DIV NAME!!!!')
+      // );
+      ReactDOM.render(
+        React.createElement(Details),
+        document.getElementById('game-details')
+      );
+      // ReactDOM.render(
+      //   React.createElement(Reviews),
+      //   document.getElementById('!!!NEED DIV NAME!!!!')
+      // );
+
+    </script>
+  </body>
+</html>
