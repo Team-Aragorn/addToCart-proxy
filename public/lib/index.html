@@ -1,45 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/app.css">
-    <title>Aragorn: Michael's Proxy</title>
+    <title>Proxy for Team Aragorn</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/games/1/app.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3003/games/1/styles.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3004/games/1/styles.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3005/styles.css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="CarouselImages"></div>
-    <div id="AddToCart"></div>
-    <div id="Recommended"></div>
-    <div id="Details"></div>
-    <div id="Reviews"></div>
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
+    <div id="container">
+      <div id="top">
+        <div id="carousel"></div>
+        <div id="addToCart"></div>
+      </div>
+      <div id="game-details"></div>
+      <div id="recommended"></div>
+      <div id="reviews"></div>
+    </div>
     <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3004/app.js"></script>
-    <script src="http://localhost:3005/app.js"></script>
-    <script>
-      // ReactDOM.render(
-      //   React.createElement(CarouselImages),
-      //   document.getElementById('!!!NEED DIV NAME!!!!')
-      // );
-      ReactDOM.render(
-        React.createElement(AddToCart),
-        document.getElementById('addToCart')
-      );
-      // ReactDOM.render(
-      //   React.createElement(Recommended),
-      //   document.getElementById('!!!NEED DIV NAME!!!!')
-      // );
-      ReactDOM.render(
-        React.createElement(Details),
-        document.getElementById('game-details')
-      );
-      // ReactDOM.render(
-      //   React.createElement(Reviews),
-      //   document.getElementById('!!!NEED DIV NAME!!!!')
-      // );
-
-    </script>
+    <script src="http://localhost:3001/games/1/bundle.js"></script>
+    <script src="http://localhost:3003/games/1/bundle.js"></script>
+    <script src="http://localhost:3004/games/1/bundle.js"></script>
+    <script src="http://localhost:3005/bundle.js"></script>
   </body>
 </html>
